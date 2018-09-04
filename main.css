@@ -1,0 +1,50 @@
+.container{
+    margin-top: 2rem;
+}
+#contentBlock{
+    height: 350px;
+    width: auto;
+    border: 1px black solid;    
+    margin-bottom: 1rem;
+}
+
+nav{
+    float: right;
+}
+
+p,h3{
+    padding: 1rem
+}
+
+#view{
+    border: 1px black solid;
+    height: 400px;
+}
+
+#log-img{
+    background-image: url(sparks-img.jpg);
+    height: 520px;
+}
+
+#proj-team{
+    font-size: 100px;
+    color: goldenrod;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#cred{
+    border-radius: 1rem;
+    border: 1px black solid;
+    padding: 20px
+}
+
+.form-check{
+    margin-bottom: 15px; 
+}
+
+#entry{
+    margin: 3rem auto;
+    border: 1px black solid;
+    padding: 4rem;
+    border-radius: 1rem;
+}
