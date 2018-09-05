@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Report</title>
+</head>
+<body>
+
+        <div class="container">
+                <div class="row">
+                        <div class="col-4">
+                          <div class="list-group" id="list-tab" role="tablist">
+                            <a class="list-group-item list-group-item-action active" id="list-status-list" data-toggle="list" href="#list-status" role="tab" aria-controls="status">Status</a>
+                            <a class="list-group-item list-group-item-action " id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Payload</a>
+                            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Defects</a>
+                            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Attachments</a>
+                            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Comments</a>
+                          </div>
+                        </div>
+                        <div class="col-8">
+                          <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="list-status" role="tabpanel" aria-labelledby="list-status-list">
+                                <label for="inputState">Projects Status</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Select the phase</option>
+                                    <option>Test Planning</option>
+                                    <option>Test Execution</option>
+                                </select>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                                
+                                <label class="switch">
+                                        <input type="checkbox" >
+                                        <span class="slider-red round"></span>
+                                </label>
+                                <label class="switch">
+                                        <input type="checkbox" >
+                                        <span class="slider-amber round"></span>
+                                </label>
+                                
+                                
+                            </div>
+                            <div class="tab-pane fade " id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                                <p>Payload</p>
+                                <table class="table table-hover">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Project</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Test Case</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>OLB-316</td>
+                                            <td>
+                                                <select>
+                                                    <option>Not Started yet</option>
+                                                    <option>In progress</option>
+                                                    <option>Finished</option>
+                                                </select>
+                                            </td>
+                                            <td><input></td>
+                                          </tr>
+                                          <tr>
+                                            <td>OLB-317</td>
+                                            <td>
+                                                <select>
+                                                    <option>Not Started yet</option>
+                                                    <option>In progress</option>
+                                                    <option>Finished</option>
+                                                </select>
+                                            </td>
+                                            <td><input></td>
+                                          </tr>
+                                          <tr>
+                                            <td>OLB-318</td>
+                                            <td>
+                                                <select>
+                                                    <option>Not Started yet</option>
+                                                    <option>In progress</option>
+                                                    <option>Finished</option>
+                                                </select>
+                                            </td>
+                                            <td><input></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                            </div>
+                            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                                <p>Defects</p>
+                                <table class="table table-hover">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Defect ID</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Assigned to</th>
+                                            <th scope="col">Description</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row"><input></th>
+                                            <td>
+                                                <select>
+                                                    <option>Open</option>
+                                                    <option>New</option>
+                                                    <option>Closed</option>
+                                                </select>
+                                            </td>
+                                            <td><input></td>
+                                            <td><textarea></textarea></td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"><input></th>
+                                            <td>
+                                                <select>
+                                                    <option>Open</option>
+                                                    <option>New</option>
+                                                    <option>Closed</option>
+                                                </select>
+                                            </td>
+                                            <td><input></td>
+                                            <td><textarea></textarea></td>
+                                            </tr>
+                                          <tr>
+                                            <th scope="row"><input></th>
+                                            <td>
+                                                <select>
+                                                    <option>Open</option>
+                                                    <option>New</option>
+                                                    <option>Closed</option>
+                                                </select>
+                                            </td>
+                                            <td><input></td>
+                                            <td><textarea></textarea></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                            </div>
+                            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                                <label id="attach">  Attach file </label> 
+                                <input type="file" >
+                            </div>
+                            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                                <p>Comments</p>
+                                <form>
+                                        <div class="form-group row">
+                                          <label for="inputEmail3" class="col-sm-2 col-form-label">Issue</label>
+                                          <div class="col-sm-10">
+                                            <textarea cols="56"></textarea>
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                          <label for="inputPassword3" class="col-sm-2 col-form-label">Impact</label>
+                                          <div class="col-sm-10">
+                                            <textarea cols="56"></textarea>
+                                          </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Mitigation</label>
+                                            <div class="col-sm-10">
+                                                <textarea cols="56"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                                <label for="inputPassword3" class="col-sm-2 col-form-label">Miscellaneous</label>
+                                                <div class="col-sm-10">
+                                                    <textarea cols="56"></textarea>
+                                                </div>
+                                            </div>
+                                      </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+        </div>
+        
+
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script> 
+</body>
+</html>
